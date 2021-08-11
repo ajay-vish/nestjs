@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        body {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            background: #1b1b1b;
+            color: #fff;
+            font-family: 'Montserrat', 'Tahoma';
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        h4 {
+            font-size: 24px;
+            color: rgb(190, 190, 190);
+            font-weight: 100;
+        }
+
+        h5 {
+            color: rgb(190, 190, 190);
+            font-weight: 100;
+            margin: 0;
+            padding: 0;
+        }
+
+        .flexcontainer {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .circle {
+            border-radius: 50%;
+            width: 10vh;
+            height: 10vh;
+            margin-right: 5vh;
+            margin-top: 5.5vh
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://nestjs.com/img/logo-small.svg" width="120">
+    <br>
+    <h5>Made by</h5>
+    <div class="flexcontainer">
+        <img class="circle" src="https://i.ibb.co/Fwmg4x2/62747900.jpg" alt="Ajay Vishwakarma" border="0">
+        <h2>
+            {{ name }}
+        </h2>
+    </div>
+    <h4>
+        <i class="fa fa-laptop"></i>&nbsp;{{ profession }}
+    </h4>
+</body>
+
+</html>
