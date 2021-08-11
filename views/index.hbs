@@ -26,6 +26,18 @@
         }
 
         h5 {
+            font-size: 20px;
+            color: rgb(190, 190, 190);
+            font-weight: 100;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        h6 {
+            font-size: 14px;
             color: rgb(190, 190, 190);
             font-weight: 100;
             margin: 0;
@@ -50,7 +62,7 @@
 <body>
     <img src="https://nestjs.com/img/logo-small.svg" width="120">
     <br>
-    <h5>Made by</h5>
+    <h6>Made by</h6>
     <div class="flexcontainer">
         <img class="circle" src="https://i.ibb.co/Fwmg4x2/62747900.jpg" alt="Ajay Vishwakarma" border="0">
         <h2>
@@ -60,6 +72,19 @@
     <h4>
         <i class="fa fa-laptop"></i>&nbsp;{{ profession }}
     </h4>
+    <div class="flexcontainer">
+        <h5>
+            <i class="fa fa-github"></i>&nbsp;
+            <a href="https://github.com/ajay-vish">GitHub</a>
+        </h5>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <h5>
+            <i class="fa fa-linkedin"></i>&nbsp;
+            <a href="https://www.linkedin.com/in/ajayvish">Linked In</a>
+        </h5>
+    </div>
 </body>
 
 </html>
