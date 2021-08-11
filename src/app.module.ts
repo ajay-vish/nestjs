@@ -11,7 +11,7 @@ import { ProductsModule } from './products/products.module';
     ProductsModule,
     CategoriesModule,
     MongooseModule.forRoot(
-      `mongodb://localhost:27017/nestjs`,
+      `mongodb+srv://root:root@shopping.fyrzl.mongodb.net/nestjs?retryWrites=true&w=majority`,
     ),
   ],
   controllers: [AppController],
