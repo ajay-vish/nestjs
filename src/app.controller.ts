@@ -3,11 +3,11 @@ import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+	constructor(private readonly appService: AppService) {}
 
-  @Get()
-  @Header('Content-Type', 'text/html')
-  getHello(): {name: string, professtion: string} {
-    return {name: 'Ajay Vishwakarma', professtion: "Software developer"};
-  }
+	@Get()
+	@Header('Content-Type', 'text/html')
+	getHello(): { name: string; professtion: string } {
+		return { name: 'Ajay Vishwakarma', professtion: 'Software developer' };
+	}
 }

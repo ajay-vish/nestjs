@@ -7,14 +7,14 @@ import { CategoriesModule } from './category/categories.module';
 import { ProductsModule } from './products/products.module';
 
 @Module({
-  imports: [
-    ProductsModule,
-    CategoriesModule,
-    MongooseModule.forRoot(
-      `mongodb+srv://root:root@shopping.fyrzl.mongodb.net/nestjs?retryWrites=true&w=majority`,
-    ),
-  ],
-  controllers: [AppController],
-  providers: [AppService],
+	imports: [
+		ProductsModule,
+		CategoriesModule,
+		MongooseModule.forRoot(
+			`mongodb+srv://root:root@shopping.fyrzl.mongodb.net/nestjs?retryWrites=true&w=majority`,
+		),
+	],
+	controllers: [AppController],
+	providers: [AppService],
 })
 export class AppModule {}
